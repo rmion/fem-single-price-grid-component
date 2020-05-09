@@ -1,0 +1,102 @@
+  html, body {
+    min-height: 100%;
+    margin: 0;
+  }
+  body {
+    background-color: hsl(204, 43%, 93%);
+    font-family: Karla, sans-serif;
+  }
+  .container {
+    max-width: 768px;
+    margin: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px -10px hsl(218, 22%, 33%);
+  }
+  header {
+    background-color: white;
+    border-radius: 10px 10px 0 0;
+  }
+  header, article > dl {
+    padding: 2rem;
+    margin: 0;
+  }
+  h1 {
+    color: hsl(179, 62%, 43%);
+  }
+  h2 {
+    color: hsl(71, 73%, 54%);
+  }
+  p {
+    color: hsl(218, 22%, 67%);
+    line-height: 1.5;
+  }
+  dl {
+    color: white;
+  }
+  dt {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  dd {
+    margin-left: 0;
+    line-height: 1.5;
+    color: hsl(204, 43%, 93%);
+  }
+  button {
+    background-color: hsl(71, 73%, 54%);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.5rem;
+    font-family: Karla, sans-serif;
+    text-align: center;
+    padding: 1rem;
+    display: block;
+    width: 100%;
+    box-shadow: 0 10px 30px -10px hsl(218, 22%, 33%);
+    margin-top: 2rem;
+  }
+  article > dl:first-of-type {
+    background-color: hsl(179, 62%, 43%);
+  }
+  article > dl:last-of-type {
+    background-color: hsl(179, 62%, 48%);
+    border-radius: 0 0 10px 10px;
+  }
+  dd > strong {
+    color: white;
+    font-size: 2rem;
+  }
+  dd > em {
+    font-style: normal;
+    vertical-align: super;
+    margin-left: 10px;
+  }
+  .attribution { text-align: center; }
+  .attribution a { color: hsl(228, 45%, 44%); }
+
+  @media only screen and (min-width: 768px) {
+    html, body {
+      height: 100%;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .container {
+      margin: 0 auto;
+    }
+    article {
+      display: flex;
+    }
+    article > dl:first-of-type {
+      border-radius: 0 0 0 10px;
+    }
+    article > dl:last-of-type {
+      border-radius: 0 0 10px 0;
+    }
+    article > dl {
+      flex: 1;
+    }
+  }
